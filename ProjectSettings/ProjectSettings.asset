@@ -618,11 +618,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: DemosDaniel
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: C:\Users\dania\OneDrive\Documentos\7mo Semestre\RM\Passive-Haptics-Demo\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 803f37df0665da01
   metroApplicationDescription: Template_3D
   wsaImages: {}
   metroTileShortName: Demo 1 Workshop
