@@ -1,20 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Drag : MonoBehaviour
 {
-   float drag = 0.01; // drag factor
-   private Rigidbody rb;
+    public float slowDownFactor; // adjust this to control how much the object slows down
 
-   void Start(){
-     rb = GetComponent<Rigidbody>();
-   }
+    private Rigidbody rb;
 
-   void FixedUpdate(){
-     var vel = rigidbody.velocity;
-     vel.x *= 1.0-drag; // reduce x component...
-     vel.z *= 1.0-drag; // and z component each cycle
-     rigidbody.velocity = vel;
-   }
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
+    private void Update()
+    {
+        // Slow down the object in the x and z-axis
+        Vector3 objectSize = transform.localScale;
+        float xSize = objectSize.x;
+        slowDownFactor = 1.0f-xSize;
+        Vector3 currentVelocity = rb.velocity;
+        currentVelocity.x *= slowDownFactor;
+        currentVelocity.z *= slowDownFactor;
+        rb.velocity = currentVelocity;
+    }
 }

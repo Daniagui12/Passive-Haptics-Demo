@@ -19,6 +19,7 @@ public class ObjectSpawner : MonoBehaviour
         cube.AddComponent<Rigidbody>();
         cube.GetComponent<Rigidbody>().useGravity = true;
         cube.AddComponent<ObjectManipulator>();
+        cube.AddComponent<Drag>();
     }
 
     public void spawnSphere()
@@ -32,6 +33,7 @@ public class ObjectSpawner : MonoBehaviour
         sphere.AddComponent<Rigidbody>();
         sphere.GetComponent<Rigidbody>().useGravity = true;
         sphere.AddComponent<ObjectManipulator>();
+        sphere.AddComponent<Drag>();
     }
 
     public void spawnCylinder()
@@ -45,6 +47,7 @@ public class ObjectSpawner : MonoBehaviour
         cylinder.AddComponent<Rigidbody>();
         cylinder.GetComponent<Rigidbody>().useGravity = true;
         cylinder.AddComponent<ObjectManipulator>();
+        cylinder.AddComponent<Drag>();
     }
 
     public void spawnCapsule()
@@ -58,6 +61,7 @@ public class ObjectSpawner : MonoBehaviour
         capsule.AddComponent<Rigidbody>();
         capsule.GetComponent<Rigidbody>().useGravity = true;
         capsule.AddComponent<ObjectManipulator>();
+        capsule.AddComponent<Drag>();
     }
 
     public void spawnPlane()
