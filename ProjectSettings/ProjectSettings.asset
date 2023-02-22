@@ -618,7 +618,7 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: DemosDaniel
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: C:\Users\dania\OneDrive\Documentos\7mo Semestre\RM\Passive-Haptics-Demo\Assets\WSATestCertificate.pfx
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
