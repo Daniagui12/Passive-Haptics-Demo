@@ -156,8 +156,8 @@ GameObject:
   - component: {fileID: 173043054}
   - component: {fileID: 173043053}
   - component: {fileID: 173043052}
-  - component: {fileID: 173043058}
   - component: {fileID: 173043051}
+  - component: {fileID: 173043058}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3731002c6b19e644b86f73cdcb1f5d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slowDownFactor: 0.9
+  slowDownFactor: 0
 --- !u!1 &347565650 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1765997328162203631, guid: e969038e4d67d9b498de2ef538969506, type: 3}
@@ -428,7 +428,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 56848fd596f082a43844edfc0e7647ae, type: 2}
+  - {fileID: 2100000, guid: 49c3c02661a83fd42b33859cfbf9a17d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -745,7 +745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3731002c6b19e644b86f73cdcb1f5d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slowDownFactor: 0.9
+  slowDownFactor: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
