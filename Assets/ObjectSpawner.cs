@@ -25,14 +25,15 @@ public class ObjectSpawner : MonoBehaviour
             GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
             cube.transform.position = vectorPosition;
             cube.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
-            cube.AddComponent<NearInteractionGrabbable>();
-            cube.AddComponent<BoxCollider>();
             cube.AddComponent<Rigidbody>();
             cube.GetComponent<Rigidbody>().useGravity = true;
-            cube.AddComponent<ObjectManipulator>();
             cube.AddComponent<Drag>();
             cube.GetComponent<Drag>().obj = cube;
             cube.GetComponent<Drag>().slowDownFactor = 0.1f;
+            cube.AddComponent<NearInteractionGrabbable>();
+            cube.AddComponent<BoxCollider>();
+            cube.AddComponent<ObjectManipulator>();
+            cube.GetComponent<ObjectManipulator>().UseForcesForNearManipulation = true;
 
             Renderer renderer = cube.GetComponent<Renderer>();
             renderer.material = objectMaterialMetal;
@@ -54,6 +55,7 @@ public class ObjectSpawner : MonoBehaviour
             cube.AddComponent<Drag>();
             cube.GetComponent<Drag>().obj = cube;
             cube.GetComponent<Drag>().slowDownFactor = 0.4f;
+            cube.GetComponent<ObjectManipulator>().UseForcesForNearManipulation = true;
             
             Renderer renderer = cube.GetComponent<Renderer>();
             renderer.material = objectMaterialRock;
@@ -74,6 +76,7 @@ public class ObjectSpawner : MonoBehaviour
             cube.AddComponent<Drag>();
             cube.GetComponent<Drag>().obj = cube;
             cube.GetComponent<Drag>().slowDownFactor = 0.6f;
+            cube.GetComponent<ObjectManipulator>().UseForcesForNearManipulation = true;
             
             Renderer renderer = cube.GetComponent<Renderer>();
             renderer.material = objectMaterialWood;
@@ -98,6 +101,7 @@ public class ObjectSpawner : MonoBehaviour
             sphere.AddComponent<Drag>();
             sphere.GetComponent<Drag>().obj = sphere;
             sphere.GetComponent<Drag>().slowDownFactor = 0.1f;
+            sphere.GetComponent<ObjectManipulator>().UseForcesForNearManipulation = true;
             
             Renderer renderer = sphere.GetComponent<Renderer>();
             renderer.material = objectMaterialMetal;
@@ -120,6 +124,7 @@ public class ObjectSpawner : MonoBehaviour
             sphere.GetComponent<Drag>();
             sphere.GetComponent<Drag>().obj = sphere;
             sphere.GetComponent<Drag>().slowDownFactor = 0.4f;
+            sphere.GetComponent<ObjectManipulator>().UseForcesForNearManipulation = true;
             
             Renderer renderer = sphere.GetComponent<Renderer>();
             renderer.material = objectMaterialRock;
@@ -141,6 +146,7 @@ public class ObjectSpawner : MonoBehaviour
             sphere.AddComponent<Drag>();
             sphere.GetComponent<Drag>().obj = sphere;
             sphere.GetComponent<Drag>().slowDownFactor = 0.6f;
+            sphere.GetComponent<ObjectManipulator>().UseForcesForNearManipulation = true;
             
             Renderer renderer = sphere.GetComponent<Renderer>();
             renderer.material = objectMaterialWood;
@@ -166,6 +172,7 @@ public class ObjectSpawner : MonoBehaviour
             cylinder.AddComponent<Drag>();
             cylinder.GetComponent<Drag>().obj = cylinder;
             cylinder.GetComponent<Drag>().slowDownFactor = 0.1f;
+            cylinder.GetComponent<ObjectManipulator>().UseForcesForNearManipulation = true;
             
             Renderer renderer = cylinder.GetComponent<Renderer>();
             renderer.material = objectMaterialMetal;
@@ -187,6 +194,7 @@ public class ObjectSpawner : MonoBehaviour
             cylinder.AddComponent<Drag>();
             cylinder.GetComponent<Drag>().obj = cylinder;
             cylinder.GetComponent<Drag>().slowDownFactor = 0.4f;
+            cylinder.GetComponent<ObjectManipulator>().UseForcesForNearManipulation = true;
             
             Renderer renderer = cylinder.GetComponent<Renderer>();
             renderer.material = objectMaterialRock;
@@ -200,14 +208,15 @@ public class ObjectSpawner : MonoBehaviour
             GameObject cylinder = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
             cylinder.transform.position = vectorPosition;
             cylinder.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
-            cylinder.AddComponent<NearInteractionGrabbable>();
-            cylinder.AddComponent<CapsuleCollider>();
             cylinder.AddComponent<Rigidbody>();
             cylinder.GetComponent<Rigidbody>().useGravity = true;
-            cylinder.AddComponent<ObjectManipulator>();
             cylinder.AddComponent<Drag>();
             cylinder.GetComponent<Drag>().obj = cylinder;
             cylinder.GetComponent<Drag>().slowDownFactor = 0.6f;
+            cylinder.AddComponent<ObjectManipulator>();
+            cylinder.AddComponent<NearInteractionGrabbable>();
+            cylinder.AddComponent<CapsuleCollider>();
+            cylinder.GetComponent<ObjectManipulator>().UseForcesForNearManipulation = true;
             
             Renderer renderer = cylinder.GetComponent<Renderer>();
             renderer.material = objectMaterialWood;
